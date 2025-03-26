@@ -30,19 +30,19 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:keyboard-tab$$
   - Z
   - X
   - C
   - V
+  - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
-  - B
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
+  - $$mdi:keyboard-tab$$
   - LGUI
   - NUMBER
   - {t: '$$mdi:keyboard-return$$', h: Fn}
