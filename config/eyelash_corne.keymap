@@ -59,7 +59,7 @@
 &kp ESCAPE      &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &kp LEFT_SHIFT  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp TAB
-                              &kp LGUI  &mo 1  &kp ENTER                                               &lt 3 SPACE  &mo 2  &kp RALT
+                              &kp LGUI  &mo 2  &kp ENTER                                               &lt 3 SPACE  &mo 1  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -68,10 +68,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                &mmv MOVE_UP                     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0    &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &kp END   &kp PG_DN
-                        &trans  &trans  &trans                                                                 &kp INS   &kp DEL   &trans
+&trans          &kp N1  &kp N2  &kp N3        &kp N4     &kp N5                                   &mmv MOVE_UP                     &kp N6     &kp N7     &kp N8    &kp N9     &kp N0    &kp BSPC
+&kp LEFT_SHIFT  &trans  &trans  &kp ASTERISK  &kp SLASH  &kp EQUAL                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp MINUS  &kp UP    &kp RIGHT  &kp HOME  &kp PG_UP
+&kp LCTRL       &trans  &trans  &trans        &trans     &trans     &kp C_MUTE                    &mmv MOVE_DOWN                   &trans     &kp LEFT   &kp DOWN  &kp RIGHT  &kp END   &kp PG_DN
+                                &trans        &trans     &kp SPACE                                                                 &kp SPACE  &kp DEL    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -80,10 +80,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &kp GT     &kp RET                                                               &kp SPACE  &trans     &trans
+&kp TILDE  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                                 &mmv MOVE_UP                     &kp CARET         &kp AMPS    &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&trans     &trans        &mkp LCLK     &mkp MCLK  &mkp RCLK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS         &kp PLUS    &kp LBKT   &kp RBKT  &kp PIPE  &kp GRAVE
+&trans     &out OUT_USB  &out OUT_BLE  &none      &none      &kp UNDERSCORE  &trans                    &mmv MOVE_DOWN                   &kp GREATER_THAN  &kp PERIOD  &kp LBRC   &kp RBRC  &kp BSLH  &kp TILDE
+                                       &trans     &kp GT     &kp RET                                                                    &kp SPACE         &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
