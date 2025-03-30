@@ -119,8 +119,8 @@
 
         shift_symbol {
             bindings = <
-&kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(UNDER)  &kp LS(PLUS)   &trans
-&trans         &trans        &trans      &trans         &trans        &trans                   &trans  &trans  &trans  &trans         &trans        &kp EQUAL     &kp LS(COLON)  &kp LS(COLON)  &kp LS(DQT)
+&kp LS(TILDE)  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(UNDER)  &kp EQUAL      &trans
+&trans         &trans        &trans      &trans         &trans        &trans                   &trans  &trans  &trans  &kp LS(PLUS)   &kp MINUS     &kp EQUAL     &kp LS(COLON)  &kp LS(COLON)  &kp LS(DQT)
 &kp RSHFT      &trans        &trans      &trans         &trans        &trans         &trans            &trans          &trans         &kp TAB       &kp LS(LT)    &kp LS(GT)     &kp LS(QMARK)  &trans
                                          &trans         &trans        &trans                                           &trans         &trans        &trans
             >;
