@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - RGB ON
+  - RGB TOG
   - Y
   - U
   - I
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - RGB OFF
+  - RGB EFF
   - N
   - M
   - {t: ',', s: <}
@@ -81,8 +81,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - OUT BLE
+  - OUT USB
   - RGB EFF
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -113,8 +113,8 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+<
+  - Sft+>
   - '*'
   - {t: /, s: '?'}
   - {t: '=', s: +}
@@ -128,19 +128,19 @@ layers:
   - '|'
   - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - OUT USB
-  - OUT BLE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: ',', s: <}
-  - .
+  - Sft+<
+  - Sft+>
   - '{'
   - '}'
   - \
-  - '~'
+  - Sft+?
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '>', type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
