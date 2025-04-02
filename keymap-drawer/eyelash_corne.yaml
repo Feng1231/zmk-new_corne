@@ -280,7 +280,7 @@ layers:
   - OUT BLE
   - OUT USB
   - RGB EFF
-  - $$mdi:volume-off$$
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB EFR
   - RGB SPI
