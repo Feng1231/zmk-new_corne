@@ -42,11 +42,11 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-esc$$', h: shift_symbol}
+  - {t: '$$mdi:keyboard-esc$$', h: Fn and navigation}
   - LGUI
   - SYMBOL
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - $$mdi:keyboard-space$$
   - NUMBER
   - $$mdi:apple-keyboard-option$$
   NUMBER:
@@ -142,12 +142,12 @@ layers:
   - {t: /, s: '?'}
   - Sft+?
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '>', type: held}
+  - {type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  Fn and navigation:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
   - F2
@@ -189,15 +189,15 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - END
-  - PAUSE BREAK
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - shift_symbol
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   shift_symbol:
-  - Sft+~
+  - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
   - Sft+@
   - Sft+#
@@ -221,11 +221,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft++
   - {t: '-', s: _}
-  - {t: '=', s: +}
+  - $$mdi:arrow-up-bold$$
   - 'Sft+:'
   - 'Sft+:'
   - Sft+"
-  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -234,16 +233,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-tab$$
-  - Sft+<
-  - Sft+>
+  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - $$mdi:arrow-down-bold$$
+  - END
   - Sft+?
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   MISC:
   - BT CLR ALL
