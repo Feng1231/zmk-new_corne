@@ -52,7 +52,23 @@
         tap-ms = <100>;
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        r_pipe {
+            bindings = <&r_pipe>;
+            key-positions = <5 44>;
+        };
+    };
+
+    macros {
+        r_pipe: r_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "R_PIPE";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -108,8 +124,8 @@
         shift_symbol {
             bindings = <
 &trans  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                    &trans          &kp LS(CARET)  &kp LS(AMPS)   &kp LS(STAR)  &kp LS(UNDER)  &kp EQUAL      &trans
-&trans  &trans        &trans      &trans         &trans        &trans                   &trans  &trans  &trans  &kp LS(PLUS)   &kp MINUS      &kp UP        &kp LS(COLON)  &kp LS(COLON)  &kp LS(DQT)
-&trans  &trans        &trans      &trans         &trans        &trans         &trans            &trans          &trans         &kp HOME       &kp DOWN      &kp END        &kp LS(QMARK)  &trans
+&trans  &trans        &trans      &trans         &trans        &trans                   &trans  &trans  &trans  &kp LS(PLUS)   &kp MINUS      &kp PG_UP     &kp LS(COLON)  &kp LS(COLON)  &kp LS(DQT)
+&trans  &trans        &trans      &trans         &trans        &trans         &trans            &trans          &trans         &kp HOME       &kp PG_DN     &kp END        &kp LS(QMARK)  &trans
                                   &trans         &trans        &trans                                           &trans         &kp BACKSPACE  &trans
             >;
         };
