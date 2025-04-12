@@ -221,7 +221,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft++
   - {t: '-', s: _}
-  - $$mdi:arrow-up-bold$$
+  - PG UP
   - 'Sft+:'
   - 'Sft+:'
   - Sft+"
@@ -235,7 +235,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
-  - $$mdi:arrow-down-bold$$
+  - PG DN
   - END
   - Sft+?
   - {t: '$$mdi:transfer$$', type: trans}
@@ -294,3 +294,6 @@ layers:
   - INS
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [5, 44]
+  k: '&r_pipe'
