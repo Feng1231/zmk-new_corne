@@ -47,7 +47,7 @@ layers:
   - SYMBOL
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: Fn and navigation}
-  - {t: '$$mdi:backspace$$', h: NUMBER}
+  - NUMBER
   - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
