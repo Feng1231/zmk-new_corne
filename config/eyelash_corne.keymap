@@ -56,17 +56,18 @@
         compatible = "zmk,combos";
 
         combo_r_pipe {
-            bindings = <&r_pipe>;
+            bindings = <&r_pip>;
             key-positions = <5 44>;
+            layers = <0 2 3 1 4>;
         };
     };
 
     macros {
-        r_pipe: r_pipe {
+        r_pip: r_pip {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp PRCNT &kp GT &kp PRCNT &kp RET>;
-            label = "R_PIPE";
+            label = "R_PIP";
         };
     };
 
