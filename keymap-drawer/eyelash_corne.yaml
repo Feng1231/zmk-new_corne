@@ -296,4 +296,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [5, 44]
-  k: '&r_pipe'
+  k: '&r_pip'
+  l: [QWERTY, SYMBOL, Fn and navigation, NUMBER, shift_symbol]
