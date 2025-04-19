@@ -54,8 +54,8 @@ layers:
   - {t: '1', s: '!'}
   - (
   - )
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: /, s: '?'}
+  - ^
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '-', s: _}
   - {t: '7', s: '&'}
@@ -80,8 +80,8 @@ layers:
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - \
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '`', s: '~'}
   - _
   - {t: MISC, h: toggle}
