@@ -89,10 +89,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans          &kp N1         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH     &kp CARET                                 &mmv MOVE_UP                     &kp MINUS  &kp N7   &kp N8  &kp N9  &kp N0     &kp BSPC
-&kp LEFT_SHIFT  &kp LESS_THAN  &kp PIPE              &kp AMPERSAND          &kp ASTERISK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp N4   &kp N5  &kp N6  &kp COLON  &kp SQT
-&kp LCTRL       &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE     &kp UNDERSCORE  &tog 5                    &mmv MOVE_DOWN                   &kp N0     &kp N1   &kp N2  &kp N3  &kp DOT    &kp FSLH
-                                                     &trans                 &trans        &trans                                                                     &kp SPACE  &kp DEL  &trans
+&kp TILDE  &kp N1     &kp N2    &kp N3                &kp N4        &kp N5                                    &mmv MOVE_UP                     &kp N6         &kp N7            &kp N8     &kp N9    &kp N0     &kp BSPC
+&kp LSHFT  &kp GRAVE  &kp PIPE  &kp AMPERSAND         &kp ASTERISK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS       &kp MINUS         &kp LBKT   &kp RBKT  &kp COLON  &kp SQT
+&kp LCTRL  &trans     &trans    &kp NON_US_BACKSLASH  &kp CARET     &kp UNDERSCORE  &tog 5                    &mmv MOVE_DOWN                   &kp LESS_THAN  &kp GREATER_THAN  &kp COMMA  &kp DOT   &kp FSLH   &kp LS(QMARK)
+                                &trans                &trans        &trans                                                                     &trans         &kp DEL           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -101,10 +101,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp TILDE       &kp EXCL    &kp AT    &kp HASH              &kp DLLR      &kp PRCNT                                 &mmv MOVE_UP                     &kp CARET   &kp AMPS    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BSPC
-&kp UNDERSCORE  &kp LS(LT)  &kp PIPE  &kp AMPERSAND         &kp ASTERISK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS    &kp MINUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON  &kp DOUBLE_QUOTES
-&trans          &trans      &trans    &kp NON_US_BACKSLASH  &kp GRAVE     &kp UNDERSCORE  &trans                    &mmv MOVE_DOWN                   &kp LS(LT)  &kp LS(GT)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp LS(QMARK)
-                                      &trans                &trans        &kp RET                                                                    &kp SPACE   &trans      &trans
+&kp TILDE       &kp EXCL   &kp AT    &kp HASH              &kp DLLR      &kp PRCNT                                 &mmv MOVE_UP                     &kp CARET      &kp AMPS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp BSPC
+&kp UNDERSCORE  &kp GRAVE  &kp PIPE  &kp AMPERSAND         &kp ASTERISK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS       &kp MINUS         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON  &kp DOUBLE_QUOTES
+&trans          &trans     &trans    &kp NON_US_BACKSLASH  &kp CARET     &kp UNDERSCORE  &trans                    &mmv MOVE_DOWN                   &kp LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH  &kp LS(QMARK)
+                                     &trans                &trans        &kp RET                                                                    &kp SPACE      &trans            &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -134,9 +134,9 @@
         layer_5 {
             display-name = "MISC";
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans          &trans           &trans          &trans        &trans        &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &out OUT_BLE  &out OUT_USB  &rgb_ug RGB_EFF  &to 0                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+&bt BT_CLR_ALL  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &out OUT_BLE  &out OUT_USB  &rgb_ug RGB_EFF  &to 0                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                                  &trans        &trans        &trans                                                                     &kp INS          &kp DEL          &trans
             >;
 
