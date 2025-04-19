@@ -89,10 +89,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans          &kp N1         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                            &mmv MOVE_UP                     &kp MINUS  &kp N7   &kp N8  &kp N9  &kp N0     &kp BSPC
-&kp LEFT_SHIFT  &kp LESS_THAN  &kp PIPE              &kp AMPERSAND          &kp ASTERISK      &kp EQUAL                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp N4   &kp N5  &kp N6  &kp COLON  &kp SQT
-&kp LCTRL       &trans         &trans                &kp NON_US_BACKSLASH   &kp GRAVE         &kp UNDERSCORE     &tog 5                    &mmv MOVE_DOWN                   &kp N0     &kp N1   &kp N2  &kp N3  &kp DOT    &kp FSLH
-                                                     &trans                 &trans            &trans                                                                        &kp SPACE  &kp DEL  &trans
+&trans          &kp N1         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH     &kp CARET                                 &mmv MOVE_UP                     &kp MINUS  &kp N7   &kp N8  &kp N9  &kp N0     &kp BSPC
+&kp LEFT_SHIFT  &kp LESS_THAN  &kp PIPE              &kp AMPERSAND          &kp ASTERISK  &kp EQUAL                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS   &kp N4   &kp N5  &kp N6  &kp COLON  &kp SQT
+&kp LCTRL       &trans         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE     &kp UNDERSCORE  &tog 5                    &mmv MOVE_DOWN                   &kp N0     &kp N1   &kp N2  &kp N3  &kp DOT    &kp FSLH
+                                                     &trans                 &trans        &trans                                                                     &kp SPACE  &kp DEL  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
